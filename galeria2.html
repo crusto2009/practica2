@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Galeria 2</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="banner">
     <div class="opiones">
-      <div class="contador-visitas">
-        Visitas: <h2 id="visitas"></h2>
-      </div>
+
       <div>
         <h1>Ping-Pong Store</h1>
       </div>
@@ -54,5 +54,18 @@
     </div>
 
   </section>
+  <footer>Todos los derechecho reservados <a href="#"> Tienda Deportiva ©</a>.</footer>
+  <script>
+
+    //Fecha Pagina.
+    let fecha = new Date().toISOString().slice(0, 10)
+
+
+    document.getElementById("anio").innerHTML = fecha.split("-")[0]
+    document.getElementById("mes").innerHTML = fecha.split("-")[1]
+    document.getElementById("dia").innerHTML = fecha.split("-")[2]
+      //console.log(fecha.getDate()+"/"+fecha.getFullYear()+"/"+(fecha.getUTCMonth()+1));
+  </script>
 </body>
+
 </html>

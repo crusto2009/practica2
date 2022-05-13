@@ -6,12 +6,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body onload="init()">
   <div class="banner">
     <div class="opiones">
-      <div class="contador-visitas">
-        Visitas: <h2 id="visitas"></h2>
-      </div>
       <div>
         <h1>Ping-Pong Store</h1>
       </div>
@@ -116,17 +113,8 @@
   </section>
 
   <footer>Todos los derechecho reservados <a href="#"> Tienda Deportiva ©</a>.</footer>
-
+  <script src="./script.js"></script>
   <script>
-    let visitasActuales = localStorage.getItem("visitas");
-    if (visitasActuales) {
-      let aumento = parseInt(visitasActuales) + 1;
-      document.getElementById("visitas").innerHTML = aumento;
-      localStorage.setItem("visitas", aumento);
-    } else {
-      localStorage.setItem("visitas", 1);
-      document.getElementById("visitas").innerHTML = 1;
-    }
 
     //Fecha Pagina.
     let fecha = new Date().toISOString().slice(0, 10)
@@ -135,15 +123,7 @@
     document.getElementById("anio").innerHTML = fecha.split("-")[0]
     document.getElementById("mes").innerHTML = fecha.split("-")[1]
     document.getElementById("dia").innerHTML = fecha.split("-")[2]
-
-
-
       //console.log(fecha.getDate()+"/"+fecha.getFullYear()+"/"+(fecha.getUTCMonth()+1));
-
-
-
-
-
   </script>
 
 
