@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tienda Deportiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="banner">
+    <div class="opiones">
+      <div class="contador-visitas">
+        Visitas: <h2 id="visitas"></h2>
+      </div>
+      <div>
+        <h1>Ping-Pong Store</h1>
+      </div>
+
+    </div>
+  </div>
+  <div class="menu">
+    <div class="fecha">
+      <div>
+        <span>Año:</span>
+        <div id="anio">
+
+        </div>
+      </div>
+      <div>
+        <span>Mes:</span>
+        <div id="mes">
+
+        </div>
+      </div>
+      <div>
+        <span>Dia:</span>
+        <div id="dia">
+        </div>
+      </div>
+    </div>
+    <div class="links">
+      <a href="#info1">Información 1</a>
+      <a href="#info2">Información 2</a>
+      <a href="./galeria1.html">Galería 1</a>
+      <a href="./galeria2.html" target="_blank">Galería 2</a>
+    </div>
+
+  </div>
+  <section id="imagen-hero">
+    <div class="hero-titulo">
+      <main>
+        <h1>TIENDA NUMERO 1 EN DEPORTES</h1>
+        <p>No busques mas, este es el mejor lugar </p>
+      </main>
+    </div>
+
+  </section>
+
+  <section id="informacion">
+
+    <div>
+      <h2 id="info1">Información 1</h2>
+      <hr>
+      <div class="contenedor">
+        <div>
+          <img src="./imagenes/tennis3.jpg" width="500" height="300" alt="">
+        </div>
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla cupiditate quam voluptatibus, dolorum,
+            saepe
+            similique magnam tempora impedit ea voluptatem soluta ab ratione, provident nihil perferendis illo harum
+            reiciendis.
+          </p>
+          <br>
+          <h1>Beneficios de practicar Ping - Pong:</h1>
+          <br>
+          <ol>
+            <li>Estimula la concentración.</li>
+            <li>Mejora el equilibrio.</li>
+            <li>Mejora los reflejos.</li>
+            <li>Mejora la capacidad de reaccion.</li>
+            <li>Desarrolla la agilidad mental.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    <div class="articule">
+      <h2 id="info2">Información 2</h2>
+      <hr>
+
+      <div class="contenedor">
+        <div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla cupiditate quam voluptatibus, dolorum,
+            saepe
+            similique magnam tempora impedit ea voluptatem soluta ab ratione, provident nihil perferendis illo harum
+            reiciendis.
+          </p>
+          <br>
+
+          <h3>Links de interés:</h3>
+          <br>
+          <ul>
+            <li>Ping - Pongs.</li>
+            <li>Raquetas.</li>
+            <li>Accesorios.</li>
+          </ul>
+
+
+        </div>
+        <div>
+          <img src="./imagenes/tennis2.jpg" width="500" height="300" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>Todos los derechecho reservados <a href="#"> Tienda Deportiva ©</a>.</footer>
+
+  <script>
+    let visitasActuales = localStorage.getItem("visitas");
+    if (visitasActuales) {
+      let aumento = parseInt(visitasActuales) + 1;
+      document.getElementById("visitas").innerHTML = aumento;
+      localStorage.setItem("visitas", aumento);
+    } else {
+      localStorage.setItem("visitas", 1);
+      document.getElementById("visitas").innerHTML = 1;
+    }
+
+    //Fecha Pagina.
+    let fecha = new Date().toISOString().slice(0, 10)
+
+
+    document.getElementById("anio").innerHTML = fecha.split("-")[0]
+    document.getElementById("mes").innerHTML = fecha.split("-")[1]
+    document.getElementById("dia").innerHTML = fecha.split("-")[2]
+
+
+
+      //console.log(fecha.getDate()+"/"+fecha.getFullYear()+"/"+(fecha.getUTCMonth()+1));
+
+
+
+
+
+  </script>
+
+
+</body>
+
+</html>
