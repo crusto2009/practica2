@@ -1,201 +1,225 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    
-  }
+  margin: 0px;
+  padding: 0px;
 
-  html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-  }
+}
 
-  body {
-    font-family: 'Roboto';
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
-  section #informacion {
-    width: 100vw;
-    height: 100vh;
-    padding: 32px;
-  }
+body {
+  font-family: 'Roboto';
+  scroll-behavior: smooth;
+}
 
-  span {
-    font-size: 0.9em;
-    font-weight: bolder;
-  }
+section #informacion {
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+}
 
-  ul ol > li {
-    list-style: disc;
-    margin:65vw !important;
-  }
+span {
+  font-size: 0.9em;
+  font-weight: bolder;
+}
 
-  .banner {
-    font-size: 1.4em;
-    text-align: center;
-    color: white;
-    width: 100%;
-    height: 18vh;
-    background-image: url('./imagenes/ping-pong.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    border-bottom: 3px solid rgb(249, 56, 56);
-  }
+ul ol>li {
+  list-style: disc;
+  margin: 65vw !important;
+}
 
-  .banner::before {
-    content: '';
-    width: 100%;
-    height: 18vh;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(86deg, rgba(0, 0, 0, 0.883) 34%, rgba(182, 153, 104, 0) 100%);
+.banner {
+  font-size: 1.4em;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 18vh;
+  background-image: url('./imagenes/ping-pong.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  border-bottom: 3px solid rgb(249, 56, 56);
+}
 
-  }
+.banner::before {
+  content: '';
+  width: 100%;
+  height: 18vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(86deg, rgba(0, 0, 0, 0.883) 34%, rgba(182, 153, 104, 0) 100%);
 
-  #imagen-hero {
-    width: 100vw;
-    height: 78vh;
-    background-image: url(./imagenes/tennis4.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+}
 
-  #imagen-hero-2 {
-    width: 100vw;
-    height: 78vh;
-    background-image: url(./imagenes/tennis3.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+#imagen-hero {
+  width: 100vw;
+  height: 78vh;
+  background-image: url(./imagenes/tennis4.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
-  #imagen-hero-3 {
-    width: 100vw;
-    height: 78vh;
-    background-image: url(./imagenes/tennis2.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+#imagen-hero-2 {
+  width: 100vw;
+  height: 78vh;
+  background-image: url(./imagenes/tennis3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
-  .opiones {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
-    height: inherit;
-  }
+#imagen-hero-3 {
+  width: 100vw;
+  height: 78vh;
+  background-image: url(./imagenes/tennis2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
-  .fecha div {
-    display: inline;
-  }
+.opiones {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: inherit;
+}
 
-
-  .links {
-    overflow: hidden;
-  }
-  
-
-  .menu {
-    background-color: black;
-    padding: 9px 0px;
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    padding: 10px 13px;
-    border-bottom: 9px inset silver;
-    box-shadow: 3px 3px 74px black;
-  }
-
-  .links  a:link {
-    color: white;
-    text-decoration: none;
-    border-left: 2px solid black;
-    padding: 9px 9px;
-  }
-
-  .links  a:visited {
-    color: white;
-  }
-
-  .hero-titulo {
-    position: relative;
-    top: 22%;
-    width: 70vh;
-    left: 50px;
-    font-family: 'Roboto';
-    font-size: 1.7rem;
-    Color: white;
-    max-width: 51vh;
-  }
-
-  .hero-titulo p {
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    font-size: 0.8em;
-  }
-
-  img {
-    float: left
-  }
-
-  #info1 p {
-    padding-left: 23px
-  }
-
-  #info1,
-  #info2 {
-    text-align: center;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-
-  hr{
-    width:25%;
-    margin:0px auto
-  }
-
-  .contenedor {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    grid-gap: 23px;
-    padding:32px
-  }
-
-  .contendor div p {
-    width:300px
-  }
-
-  .articule{
-    width:89vw;
-    margin:23px auto
-  }
-
-  .articule:nth-child(2){
-    padding:23px 23px;
-    background-color:rgb(238, 237, 237)
-  }
-
-  footer a:link {
-    color:white
-  }
-
-  footer a:visited {
-    color:white
-  }
+.fecha div {
+  display: inline;
+}
 
 
-  footer {
-    padding:13px 13px;
-    color:white;
-    text-align: center;
-    background: rgb(0, 0, 0);
-    border-bottom: 2px solid red;
-    border-top: 1px solid white;
-  }
+.links {
+  overflow: hidden;
+}
+
+
+.menu {
+  background-color: black;
+  padding: 9px 0px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 10px 13px;
+  border-bottom: 9px inset silver;
+  box-shadow: 3px 3px 74px black;
+}
+
+.links a:link {
+  color: white;
+  text-decoration: none;
+  border-left: 2px solid black;
+  padding: 9px 9px;
+}
+
+.links a:visited {
+  color: white;
+}
+
+.hero-titulo {
+  position: relative;
+  top: 22%;
+  width: 70vh;
+  left: 50px;
+  font-family: 'Roboto';
+  font-size: 1.7rem;
+  Color: white;
+  max-width: 51vh;
+}
+
+.hero-titulo p {
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+img {
+  float: left
+}
+
+#info1 p {
+  padding-left: 23px
+}
+
+#info1,
+#info2 {
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+hr {
+  width: 25%;
+  margin: 0px auto
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  grid-gap: 23px;
+  padding: 32px
+}
+
+.contendor div p {
+  width: 300px
+}
+
+.articule {
+  width: 89vw;
+  margin: 23px auto;
+  text-align: left
+}
+
+.articule:nth-child(2) {
+  padding: 23px 23px;
+  background-color: rgb(238, 237, 237)
+}
+
+footer a:link {
+  color: white
+}
+
+footer a:visited {
+  color: white
+}
+
+
+footer {
+  padding: 13px 13px;
+  color: white;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  border-bottom: 2px solid red;
+  border-top: 1px solid white;
+}
+
+.ping-pong-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.ping-pong-grid div {
+  filter: drop-shadow(2px 4px 6px black);
+  padding: 2px 3px;
+  box-shadow: 3px 3px solid black;
+}
+
+
+
+.contenedor-ping-pong-padre {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  grid-gap: 23px;
+  padding: 32px;
+  background-color: rgb(238, 237, 237)
+}
